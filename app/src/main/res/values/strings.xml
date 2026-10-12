@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GestureKey</string>
+    <string name="widget_label">Send</string>
+    <string name="widget_description">Tap, show a gesture, send a message</string>
+</resources>
