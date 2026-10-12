@@ -16,6 +16,11 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "0.1.0"
+
+        // Modern phones are 64-bit ARM; dropping emulator/32-bit libs halves the APK.
+        ndk {
+            abiFilters += listOf("arm64-v8a")
+        }
     }
 
     signingConfigs {
