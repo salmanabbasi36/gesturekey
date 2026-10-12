@@ -55,6 +55,13 @@ android {
         compose = true
     }
 
+    // Compress native libs inside the APK (extracted at install): smaller download.
+    packaging {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+    }
+
     // MediaPipe memory-maps the model, so keep it uncompressed in the APK.
     androidResources {
         noCompress.add("task")
